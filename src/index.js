@@ -60,15 +60,60 @@ const logoImg = () => {
     return logoImg;
 }
 
+const navBar = () => {
+    const navBar = document.createElement('div');
+    navBar.classList.add('navBar');
+
+    const navItems = document.createElement('ul');
+    navItems.classList.add('navItems');
+
+    const menu = document.createElement('li');
+    menu.classList.add('menu');
+    menu.textContent = 'Menu';
+
+    const contact = document.createElement('li');
+    contact.classList.add('contact');
+    contact.textContent = 'Contact';
+
+    navItems.appendChild(menu);
+    navItems.appendChild(contact);
+
+    navBar.appendChild(navItems);
+
+    return navBar;
+}
+
+
 const header = () => {
     const header = document.createElement('div');
     header.classList.add('header-bar');
 
     header.appendChild(logoImg());
+    header.appendChild(navBar());
     return header;
 }
 
 content.appendChild(header());
+
+const img1Pic = () => {
+    const img1Pic = document.createElement('img');
+    img1Pic.src = img1;
+    img1Pic.classList.add('img1');
+
+    return img1Pic;
+}
+
+const img2Pic = () => {
+
+    const img2Pic = document.createElement('img');
+    img2Pic.src = img2;
+    img2Pic.classList.add('img2');
+
+    return img2Pic;
+}
+
+content.appendChild(img1Pic());
+content.appendChild(img2Pic());
     
 
 
