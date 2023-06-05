@@ -137,8 +137,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
     padding: 20px;
     font-family: 'main';
     font-size: 20px;
@@ -149,11 +147,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
     padding: 20px;
     background-color: #000000;
-    height: 10px;
 }
 
 .footerText
@@ -270,3 +265,96 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 480px) {
+    .content.home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr 1fr 1fr 10px;
+        grid-template-areas:
+            "header-bar"
+            "img1"
+            "img2"
+            "about"
+            "footer";
+    }
+  
+    .content.menu {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 10px;
+      grid-template-areas:
+        "header-bar"
+        "menu"
+        "footer";
+    }
+  
+    .content.contact {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 10px;
+      grid-template-areas:
+        "header-bar"
+        "info"
+        "footer";
+    }
+
+    .menu-items {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .menu-item {
+      font-size: 16px;
+    }
+  
+    .nameContainer {
+      top: 50%;
+
+    }
+  
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+
+    .contact-info {
+      font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content.home {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 1fr 1fr 10px;
+      grid-template-areas:
+        "header-bar"
+        "img1"
+        "img2"
+        "about"
+        "footer";
+    }
+  
+    .content.menu {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 10px;
+      grid-template-areas:
+        "header-bar"
+        "menu"
+        "footer";
+    }
+  
+    .content.contact {
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 10px;
+      grid-template-areas:
+        "header-bar"
+        "info"
+        "footer";
+    }
+  
+    .menu-items {
+      width: 100%;
+    }
+}
+  
