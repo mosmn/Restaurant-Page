@@ -7,13 +7,13 @@ Check out the live demo [here](https://mosmn.github.io/Restaurant-Page/).
 
 ## Screenshots
 Home Page
-![Home Page](screenshot-home.png)
+![Home Page](/hp.png)
 
 Menu Page
-![Menu Page](screenshot-menu.png)
+![Menu Page](/mp.png)
 
 Contact Page
-![Contact Page](screenshot-contact.png)
+![Contact Page](/cp.png)
 
 ## Tech Stack
 - JavaScript
