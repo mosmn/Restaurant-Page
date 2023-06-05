@@ -44,7 +44,6 @@ The project presented several challenges during its development:
 ## Future Features
 
 - Adding a reservation form to allow customers to book tables online.
-- Implementing a gallery page to showcase images of the restaurant's interior and dishes.
 - Incorporating an online ordering system to enable customers to place food orders for delivery or pickup.
 - Integrating a review section where customers can leave feedback and ratings for the restaurant.
 - Including a map and directions section to help customers locate the restaurant easily.
