@@ -3,7 +3,7 @@
 This project is a simple restaurant website built using webpack and JavaScript. It showcases the use of modules and tabbed browsing to create a dynamic user experience.
 
 ## Live Demo
-Check out the live demo [here](https://mosmn.github.io/Restaurant-Page/m).
+Check out the live demo [here](https://mosmn.github.io/Restaurant-Page/).
 
 ## Screenshots
 Home Page
