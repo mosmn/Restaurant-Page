@@ -3,7 +3,43 @@ import img1 from './img1.png';
 import img2 from './img2.png';
 import logo from './logo.png';
 import menuPage from './menu.js';
+import contactPage from './contact.js';
 
+const homePageLoader = () => {
+    const content = document.querySelector('.content');
+
+    if (content.classList.contains('menu') || content.classList.contains('contact')) {
+        content.classList.remove('menu', 'contact');
+        content.classList.add('home');
+    }
+    content.innerHTML = '';
+    content.appendChild(header());
+    content.appendChild(name());
+    content.appendChild(img1Pic());
+    content.appendChild(img2Pic());
+    content.appendChild(about());
+    content.appendChild(footer());
+}
+
+const menuPageLoader = () => {
+    const content = document.querySelector('.content');
+    if (content.classList.contains('home') || content.classList.contains('contact')) {
+        content.classList.remove('home', 'contact');
+        content.classList.add('menu');
+    }
+    content.innerHTML = '';
+    content.appendChild(menuPage());
+}
+
+const contactPageLoader = () => {
+    const content = document.querySelector('.content');
+    if (content.classList.contains('home') || content.classList.contains('menu')) {
+        content.classList.remove('home', 'menu');
+        content.classList.add('contact');
+    }
+    content.innerHTML = '';
+    content.appendChild(contactPage());
+}
 
 const content = document.createElement('div');
 content.classList.add('content', 'home');
@@ -12,6 +48,7 @@ const logoImg = () => {
     const logoImg = document.createElement('img');
     logoImg.src = logo;
     logoImg.classList.add('logo');
+    logoImg.addEventListener('click', homePageLoader);
 
     return logoImg;
 }
@@ -26,11 +63,12 @@ const navBar = () => {
     const menu = document.createElement('li');
     menu.classList.add('menu');
     menu.textContent = 'Menu';
-    menu.addEventListener('click', menuPage);
+    menu.addEventListener('click', menuPageLoader);
 
     const contact = document.createElement('li');
     contact.classList.add('contact');
     contact.textContent = 'Contact';
+    contact.addEventListener('click', contactPageLoader);
 
     navItems.appendChild(menu);
     navItems.appendChild(contact);
@@ -123,3 +161,4 @@ content.appendChild(footer());
 
 document.body.appendChild(content);
 
+export {header, footer};

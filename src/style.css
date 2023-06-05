@@ -20,6 +20,24 @@ body {
         "footer footer";
 }
 
+.content.menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "header-bar header-bar"
+        "menu menu"
+        "footer footer";
+}
+
+.content.contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "header-bar header-bar"
+        "info info"
+        "footer footer";
+}
+
 .header-bar {
     grid-area: header-bar;
     display: flex;

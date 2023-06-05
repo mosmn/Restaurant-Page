@@ -1,16 +1,10 @@
 import './style.css';
-
-const emptyContent = () => {
-    const content = document.querySelector('.content');
-    content.innerHTML = '';
-}
+import {header, footer} from './index.js';
 
 const menuPage = () => {
-    emptyContent();
-    const content = document.createElement('div');
-    content.classList.add('content', 'menu');
-    document.body.appendChild(content);
+    const content = document.querySelector('.content');
 
+    content.appendChild(header());
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
@@ -26,66 +20,129 @@ const menuPage = () => {
 
     const menuItem1Title = document.createElement('h2');
     menuItem1Title.classList.add('menu-item-title');
-    menuItem1Title.textContent = 'Appetizers';
+    menuItem1Title.textContent = 'Chicken';
 
-    const menuItem1List = document.createElement('ul');
-    menuItem1List.classList.add('menu-item-list');
+    const menuItem1Desc = document.createElement('p');
+    menuItem1Desc.classList.add('menu-item-desc');
+    menuItem1Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
-    const menuItem1Item1 = document.createElement('li');
-    menuItem1Item1.classList.add('menu-item-list-item');
-    menuItem1Item1.textContent = 'Caviar';
+    const menuItem1Price = document.createElement('p');
+    menuItem1Price.classList.add('menu-item-price');
+    menuItem1Price.textContent = '$10';
 
-    const menuItem1Item2 = document.createElement('li');
-    menuItem1Item2.classList.add('menu-item-list-item');
-    menuItem1Item2.textContent = 'Escargot';
+    menuItem1.appendChild(menuItem1Title);
+    menuItem1.appendChild(menuItem1Desc);
+    menuItem1.appendChild(menuItem1Price);
 
-    const menuItem1Item3 = document.createElement('li');
-    menuItem1Item3.classList.add('menu-item-list-item');
-    menuItem1Item3.textContent = 'Foie Gras';
+    const menuItem2 = document.createElement('div');
+    menuItem2.classList.add('menu-item');
 
-    const menuItem1Item4 = document.createElement('li');
-    menuItem1Item4.classList.add('menu-item-list-item');
-    menuItem1Item4.textContent = 'Pate';
+    const menuItem2Title = document.createElement('h2');
+    menuItem2Title.classList.add('menu-item-title');
+    menuItem2Title.textContent = 'Beef';
 
-    const menuItem1Item5 = document.createElement('li');
-    menuItem1Item5.classList.add('menu-item-list-item');
-    menuItem1Item5.textContent = 'Salmon Tartare';
+    const menuItem2Desc = document.createElement('p');
+    menuItem2Desc.classList.add('menu-item-desc');
+    menuItem2Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
-    const menuItem1Item6 = document.createElement('li');
-    menuItem1Item6.classList.add('menu-item-list-item');
-    menuItem1Item6.textContent = 'Shrimp Cocktail';
+    const menuItem2Price = document.createElement('p');
+    menuItem2Price.classList.add('menu-item-price');
+    menuItem2Price.textContent = '$15';
 
-    const menuItem1Item7 = document.createElement('li');
-    menuItem1Item7.classList.add('menu-item-list-item');
-    menuItem1Item7.textContent = 'Tuna Tartare';
+    menuItem2.appendChild(menuItem2Title);
+    menuItem2.appendChild(menuItem2Desc);
+    menuItem2.appendChild(menuItem2Price);
 
-    const menuItem1Item8 = document.createElement('li');
-    menuItem1Item8.classList.add('menu-item-list-item');
-    menuItem1Item8.textContent = 'Oysters';
+    const menuItem3 = document.createElement('div');
+    menuItem3.classList.add('menu-item');
 
-    const menuItem1Item9 = document.createElement('li');
-    menuItem1Item9.classList.add('menu-item-list-item');
-    menuItem1Item9.textContent = 'Crab Cakes';
+    const menuItem3Title = document.createElement('h2');
+    menuItem3Title.classList.add('menu-item-title');
+    menuItem3Title.textContent = 'Pork';
 
-    const menuItem1Item10 = document.createElement('li');
-    menuItem1Item10.classList.add('menu-item-list-item');
-    menuItem1Item10.textContent = 'Fried Calamari';
+    const menuItem3Desc = document.createElement('p');
+    menuItem3Desc.classList.add('menu-item-desc');
+    menuItem3Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
-    const menuItem1Item11 = document.createElement('li');
-    menuItem1Item11.classList.add('menu-item-list-item');
-    menuItem1Item11.textContent = 'Fried Mozzarella';
+    const menuItem3Price = document.createElement('p');
+    menuItem3Price.classList.add('menu-item-price');
+    menuItem3Price.textContent = '$12';
 
-    const menuItem1Item12 = document.createElement('li');
-    menuItem1Item12.classList.add('menu-item-list-item');
-    menuItem1Item12.textContent = 'Fried Zucchini';
-    
-    const menuItem1Item13 = document.createElement('li');
-    menuItem1Item13.classList.add('menu-item-list-item');
-    menuItem1Item13.textContent = 'Garlic Bread';
+    menuItem3.appendChild(menuItem3Title);
+    menuItem3.appendChild(menuItem3Desc);
+    menuItem3.appendChild(menuItem3Price);
 
-    const menuItem1Item14 = document.createElement('li');
-    menuItem1Item14.classList.add('menu-item-list-item');
-    menuItem1Item14.textContent = 'Garlic Bread with Cheese';
+    const menuItem4 = document.createElement('div');
+    menuItem4.classList.add('menu-item');
+
+    const menuItem4Title = document.createElement('h2');
+    menuItem4Title.classList.add('menu-item-title');
+    menuItem4Title.textContent = 'Fish';
+
+    const menuItem4Desc = document.createElement('p');
+    menuItem4Desc.classList.add('menu-item-desc');
+    menuItem4Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
+    const menuItem4Price = document.createElement('p');
+    menuItem4Price.classList.add('menu-item-price');
+    menuItem4Price.textContent = '$12';
+
+    menuItem4.appendChild(menuItem4Title);
+    menuItem4.appendChild(menuItem4Desc);
+    menuItem4.appendChild(menuItem4Price);
+
+    const menuItem5 = document.createElement('div');
+    menuItem5.classList.add('menu-item');
+
+    const menuItem5Title = document.createElement('h2');
+    menuItem5Title.classList.add('menu-item-title');
+    menuItem5Title.textContent = 'Vegetarian';
+
+    const menuItem5Desc = document.createElement('p');
+    menuItem5Desc.classList.add('menu-item-desc');
+    menuItem5Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
+    const menuItem5Price = document.createElement('p');
+    menuItem5Price.classList.add('menu-item-price');
+    menuItem5Price.textContent = '$10';
+
+    menuItem5.appendChild(menuItem5Title);
+    menuItem5.appendChild(menuItem5Desc);
+    menuItem5.appendChild(menuItem5Price);
+
+    const menuItem6 = document.createElement('div');
+    menuItem6.classList.add('menu-item');
+
+    const menuItem6Title = document.createElement('h2');
+    menuItem6Title.classList.add('menu-item-title');
+    menuItem6Title.textContent = 'Vegan';
+
+    const menuItem6Desc = document.createElement('p');
+    menuItem6Desc.classList.add('menu-item-desc');
+    menuItem6Desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
+    const menuItem6Price = document.createElement('p');
+    menuItem6Price.classList.add('menu-item-price');
+    menuItem6Price.textContent = '$10';
+
+    menuItem6.appendChild(menuItem6Title);
+    menuItem6.appendChild(menuItem6Desc);
+    menuItem6.appendChild(menuItem6Price);
+
+    menuItems.appendChild(menuItem1);
+    menuItems.appendChild(menuItem2);
+    menuItems.appendChild(menuItem3);
+    menuItems.appendChild(menuItem4);
+    menuItems.appendChild(menuItem5);
+    menuItems.appendChild(menuItem6);
+
+    menu.appendChild(menuTitle);
+    menu.appendChild(menuItems);
+
+    content.appendChild(menu);
+    content.appendChild(footer());
+
+    return content;
 }
 
 export default menuPage;
