@@ -8,7 +8,7 @@ const contactPage = () => {
 
     content.appendChild(header());
     const contact = document.createElement('div');
-    contact.classList.add('contact');
+    contact.classList.add('contactContainer');
 
     const contactTitle = document.createElement('h1');
     contactTitle.classList.add('contact-title');
