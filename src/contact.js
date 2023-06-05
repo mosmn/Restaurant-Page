@@ -58,8 +58,6 @@ const contactPage = () => {
 
     content.appendChild(contact);
     content.appendChild(footer());
-
-    return content;
 }
 
 export default contactPage;

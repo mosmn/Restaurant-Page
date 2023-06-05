@@ -6,7 +6,7 @@ const menuPage = () => {
 
     content.appendChild(header());
     const menu = document.createElement('div');
-    menu.classList.add('menu');
+    menu.classList.add('menuContainer');
 
     const menuTitle = document.createElement('h1');
     menuTitle.classList.add('menu-title');
@@ -141,8 +141,6 @@ const menuPage = () => {
 
     content.appendChild(menu);
     content.appendChild(footer());
-
-    return content;
 }
 
 export default menuPage;

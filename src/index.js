@@ -28,7 +28,7 @@ const menuPageLoader = () => {
         content.classList.add('menu');
     }
     content.innerHTML = '';
-    content.appendChild(menuPage());
+    menuPage();
 }
 
 const contactPageLoader = () => {
@@ -38,7 +38,7 @@ const contactPageLoader = () => {
         content.classList.add('contact');
     }
     content.innerHTML = '';
-    content.appendChild(contactPage());
+    contactPage();
 }
 
 const content = document.createElement('div');
