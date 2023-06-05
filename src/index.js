@@ -158,7 +158,6 @@ const footer = () => {
 }
 
 content.appendChild(footer());
-
 document.body.appendChild(content);
 
 export {header, footer};
